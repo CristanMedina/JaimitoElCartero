@@ -1,0 +1,19 @@
+Crea un archivo llamado "connect.php" en esa carpeta.
+pon el siguiente codigo:
+
+<?php
+
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "";
+$port = 3306;
+$conn = new mysqli( $host, $user, $pass, $db, $port );
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} else {
+    echo "Connected successfully";
+}
+
+En las comillas vacias agrega los datos requeridos de tu base de datos MySQL.
